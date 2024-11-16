@@ -1,0 +1,65 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+/* Form Styling */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Search Section */
+h1 {
+  text-align: center;
+}
+
+#search {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+button {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* Result Section */
+#result {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  color: black;
+}
