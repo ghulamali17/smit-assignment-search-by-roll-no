@@ -50,11 +50,6 @@ function formData(e) {
       stdTotalMarks: parseInt(tMarks.value.trim()),
     };
 
-    if (userData.stdObtMarks > userData.stdTotalMarks) {
-      alert("Obtained marks cannot be greater than total marks!");
-      return;
-    }
-
     studentDetails.push(userData);
     alert("Form submitted successfully!");
     console.log(studentDetails);
@@ -89,6 +84,10 @@ function Validate() {
     marksError.style.display = "block";
     marksError.innerText = "Marks should not be empty";
     flag = false;
+  } else if (parseInt(obtMarks.value.trim()) > parseInt(tMarks.value.trim())) {
+    marksError.style.display = "block";
+    marksError.innerText = "Obtained marks cannot be greater than total marks";
+    flag = false;
   } else {
     marksError.style.display = "none";
   }
@@ -113,7 +112,7 @@ function searchData() {
     return;
   }
 
-  // Searching tudent
+  // Searching Student
   let studentFound = null;
   for (let i = 0; i < studentDetails.length; i++) {
     if (studentDetails[i].stdRollNo === rollNoFind) {
