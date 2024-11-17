@@ -92,6 +92,16 @@ function Validate() {
   } else {
     marksError.style.display = "none";
   }
+
+  // Duplicate Roll no
+  for (let i = 0; i < studentDetails.length; i++) {
+    if (rollNo.value === studentDetails[i].stdRollNo) {
+      rollError.style.display = "block";
+      rollError.innerText = "Roll No already exists";
+      flag = false;
+      return;
+    }
+  }
 }
 
 function searchData() {
